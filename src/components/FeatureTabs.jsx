@@ -10,33 +10,36 @@ const tabs = [
 const tabContents = [
   {
     tabsId: 1,
-    title: "xSOL",
+    title: "liBNB",
     description1:
-      "A zero-cost solution to leverage SOL with no liquidation risk",
+      "A zero-cost solution to stake BNB with no liquidation risk",
     description2:
-      "The xSOL token can be held in your wallet, amplifying the price movements of SOL",
-    leverage: "Current leverage: 3.4x",
-    buttonText: "Mint xSOL →",
+      "The liBNB token can be held in your wallet, amplifying the price movements of BNB write that and remove current  leverage option",
+    leverage: "Current APY: 8%",
+    buttonText: "Stake Now →",
+    link: "https://stake.liquifydao.com/",
   },
   {
     tabsId: 2,
-    title: "Staked hyUSD",
+    title: "Stake BNB, USDT & LIQ",
     description1:
-      "A yield bearing token that accrues amplified returns from the underlying LSTs",
+      "A yield bearing pools that accrues amplified returns from the staked tokens",
     description2:
-      "The staked version of hyUSD helps secure the protocol while automatically earning compounded yields",
-    leverage: "Current APY: 13.1%",
+      "The staked tokens helps secure the protocol while automatically earning compounded yields.",
+    leverage: "keep curent apy 10-15%",
     buttonText: "Start Earning →",
+    link: "https://pools.liquifydao.com/",
   },
   {
     tabsId: 3,
-    title: "hyUSD",
+    title: "Liquidity Pools",
     description1:
-      "A secure way to hold USD positions without relying on centralized custodians",
+      "A secure way to hold positions without relying on centralized custodians.",
     description2:
-      "hyUSD provides a high level of decentralization, making it ideal for storing value on-chain.",
-    leverage: "Collateral ratio: 141.2%",
-    buttonText: "Mint hyUSD →",
+      "liquidity pools provides a high level of decentralization, making it ideal for storing value on-chain.",
+    leverage: "",
+    buttonText: "Add Liquidity →",
+    link: "",
   },
 ];
 
@@ -124,9 +127,14 @@ const FeaturesTabs = () => {
                   {activeContent.leverage}
                 </div>
 
-                <button className="mt-2 bg-gradient-to-r from-purple-600 to-indigo-600 px-6 py-2 rounded-xl font-semibold">
+                <a
+                  href={activeContent.link}
+                  className={`mt-2 bg-gradient-to-r from-purple-600 to-indigo-600 px-6 py-2 rounded-xl font-semibold inline-block transition
+                  ${!activeContent.link ? "opacity-50 pointer-events-none" : "hover:opacity-90"}
+                  `}
+                >
                   {activeContent.buttonText}
-                </button>
+                </a>
               </div>
             </>
           )}
@@ -167,23 +175,22 @@ const FeaturesTabs = () => {
 
             {/* Social Media Left */}
             <div className="flex items-center gap-6 text-white">
-              <a href="#" className="hover:text-white  transition">
+              <a href="https://x.com/LiquifyDAO" className="hover:text-white  transition">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-white transition">
+              <a href="https://t.me/Liquifycommunity" className="hover:text-white transition">
                 <Send size={20} />
-              </a>
-              <a href="#" className="hover:text-white transition">
-                <Github size={20} />
               </a>
             </div>
 
-            {/* Dynamic Button Right */}
-            {activeMobileContent && (
-              <button className="bg-gradient-to-r from-purple-600 to-indigo-600 px-5 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap">
-                {activeMobileContent.buttonText}
-              </button>
-            )}
+            <a
+              href={activeMobileContent.link}
+              className={`bg-gradient-to-r from-purple-600 to-indigo-600 px-5 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap inline-block transition
+              ${!activeMobileContent.link ? "opacity-50 pointer-events-none" : "hover:opacity-90"}
+              `}
+            >
+              {activeMobileContent.buttonText}
+            </a>
 
           </div>
         </div>

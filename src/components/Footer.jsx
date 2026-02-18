@@ -7,9 +7,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-blue-500 rounded"></div>
-            <span className="font-semibold">Liquify</span>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="Liquify Logo"
+              className="w-8 h-8 object-contain"
+            />
+            <span className="font-semibold text-2xl tracking-tight">
+              Liquify
+            </span>
           </div>
 
           {/* Icons */}
@@ -20,24 +26,17 @@ const Footer = () => {
             </span>
 
             <a
-              href="#"
+              href="https://x.com/LiquifyDAO"
               className="text-gray-500 text-gray-200 hover:text-white transition"
             >
               <Twitter size={20} />
             </a>
 
             <a
-              href="#"
+              href="https://t.me/Liquifycommunity"
               className="text-gray-500 text-gray-200 hover:text-white transition"
             >
               <Send size={20} />
-            </a>
-
-            <a
-              href="#"
-              className="text-gray-500 text-gray-200 hover:text-white transition"
-            >
-              <Github size={20} />
             </a>
 
           </div>

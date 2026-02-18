@@ -1,4 +1,6 @@
 import React from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 
 const Hero = () => {
   return (
@@ -41,15 +43,14 @@ const Hero = () => {
               </div>
 
               {/* Image */}
-              <div className="relative z-10">
-                <video
-                  src="/mp3_players.webm"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-[480px] md:w-[560px] object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.8)]"
-                />
+              <div className="relative z-10 mt-10 md:mt-0 w-[520px] md:-mx-0 -mx-16 sm:w-[115%] md:w-[520px] max-w-none md:max-w-[560px]">
+
+              <DotLottieReact
+                src="https://lottie.host/7c61ef3c-5cb4-4674-a002-24fdb28b8443/sIuaYCkRII.lottie"
+                loop
+                autoplay
+                className="w-full h-auto"
+              />
               </div>
 
 

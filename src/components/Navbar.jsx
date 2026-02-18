@@ -25,13 +25,19 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition">Staking</a>
-            <a href="#" className="hover:text-white transition">Yield</a>
-            <a href="#" className="hover:text-white transition">Liquidity</a>
-            <a href="#" className="hover:text-white transition">Docs</a>
-            <button className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-200 transition">
+            <a href="https://stake.liquifydao.com/" className="hover:text-white transition">Staking</a>
+            <a href="https://pools.liquifydao.com/earn" className="hover:text-white transition">Yield</a>
+            <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Liquidity</a>
+            <a href="https://docs.liquifydao.com" className="hover:text-white transition">Docs</a>
+            <a
+              href="https://pools.liquifydao.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-200 transition inline-block"
+            >
               Launch App
-            </button>
+            </a>
+
           </div>
 
           {/* Mobile Burger */}
@@ -50,13 +56,20 @@ const Navbar = () => {
           }`}
         >
           <div className="flex flex-col gap-6 text-gray-300 text-sm pb-6">
-            <a href="#" className="hover:text-white transition">Products</a>
-            <a href="#" className="hover:text-white transition">Developers</a>
-            <a href="#" className="hover:text-white transition">Community</a>
+          <a href="https://stake.liquifydao.com/" className="hover:text-white transition">Staking</a>
+          <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Yield</a>
+          <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Liquidity</a>
+          <a href="https://docs.liquifydao.com" className="hover:text-white transition">Docs</a>
 
-            <button className="w-full px-4 py-3 bg-white text-black rounded-lg hover:bg-gray-200 transition">
-              Launch App
-            </button>
+          <a
+            href="https://pools.liquifydao.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full px-4 py-3 bg-white text-black rounded-lg hover:bg-gray-200 transition inline-block text-center"
+          >
+            Launch App
+          </a>
+
           </div>
         </div>
 

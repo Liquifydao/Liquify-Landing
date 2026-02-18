@@ -15,7 +15,11 @@ function App() {
         <Hero />
         <FeatureTabs />
       </main>
-      <Footer />
+
+      {/* Hide on mobile */}
+      <div className="hidden md:block">
+        <Footer />
+      </div>
     </>
   );
 }
