@@ -14,19 +14,19 @@ const tabContents = [
     description1:
       "A zero-cost solution to stake BNB with no liquidation risk",
     description2:
-      "The liBNB token can be held in your wallet, amplifying the price movements of BNB write that and remove current  leverage option",
+      "The liBNB token can be held in your wallet, amplifying the price movements of BNB",
     leverage: "Current APY: 8%",
     buttonText: "Stake Now →",
     link: "https://stake.liquifydao.com/",
   },
   {
     tabsId: 2,
-    title: "Stake BNB, USDT & LIQ",
+    title: "Stake BNB, USDT & LIQUIFy",
     description1:
       "A yield bearing pools that accrues amplified returns from the staked tokens",
     description2:
       "The staked tokens helps secure the protocol while automatically earning compounded yields.",
-    leverage: "keep curent apy 10-15%",
+    leverage: "Current APY 10%",
     buttonText: "Start Earning →",
     link: "https://pools.liquifydao.com/",
   },
