@@ -25,9 +25,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
-            <a href="https://stake.liquifydao.com/" className="hover:text-white transition">Staking</a>
-            <a href="https://pools.liquifydao.com/earn" className="hover:text-white transition">Yield</a>
-            <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Liquidity</a>
+            <a href="https://app.liquifydao.com" className="hover:text-white transition">Staking</a>
+            <a href="https://app.liquifydao.com" className="hover:text-white transition">Yield</a>
+            <a href="https://app.liquifydao.com" className="hover:text-white transition">Liquidity</a>
             <a href="https://docs.liquifydao.com" className="hover:text-white transition">Docs</a>
             <a
               href="https://pools.liquifydao.com"
@@ -56,9 +56,9 @@ const Navbar = () => {
           }`}
         >
           <div className="flex flex-col gap-6 text-gray-300 text-sm pb-6">
-          <a href="https://stake.liquifydao.com/" className="hover:text-white transition">Staking</a>
-          <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Yield</a>
-          <a href="https://pools.liquifydao.com/" className="hover:text-white transition">Liquidity</a>
+          <a href="https://app.liquifydao.com" className="hover:text-white transition">Staking</a>
+          <a href="https://app.liquifydao.com" className="hover:text-white transition">Yield</a>
+          <a href="https://app.liquifydao.com" className="hover:text-white transition">Liquidity</a>
           <a href="https://docs.liquifydao.com" className="hover:text-white transition">Docs</a>
 
           <a
