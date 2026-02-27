@@ -17,7 +17,7 @@ const tabContents = [
       "The liBNB token can be held in your wallet, amplifying the price movements of BNB",
     leverage: "Current APY: 8%",
     buttonText: "Stake Now →",
-    link: "https://stake.liquifydao.com/",
+    link: "https://app.liquifydao.com/",
   },
   {
     tabsId: 2,
@@ -28,7 +28,7 @@ const tabContents = [
       "The staked tokens helps secure the protocol while automatically earning compounded yields.",
     leverage: "Current APY 10%",
     buttonText: "Start Earning →",
-    link: "https://pools.liquifydao.com/",
+    link: "https://app.liquifydao.com/",
   },
   {
     tabsId: 3,
@@ -37,9 +37,9 @@ const tabContents = [
       "A secure way to hold positions without relying on centralized custodians.",
     description2:
       "liquidity pools provides a high level of decentralization, making it ideal for storing value on-chain.",
-    leverage: "",
+    leverage: "8%",
     buttonText: "Add Liquidity →",
-    link: "",
+    link: "https://app.liquifydao.com/",
   },
 ];
 
