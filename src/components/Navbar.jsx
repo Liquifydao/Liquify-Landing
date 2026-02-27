@@ -30,7 +30,7 @@ const Navbar = () => {
             <a href="https://app.liquifydao.com" className="hover:text-white transition">Liquidity</a>
             <a href="https://docs.liquifydao.com" className="hover:text-white transition">Docs</a>
             <a
-              href="https://pools.liquifydao.com"
+              href="https://app.liquifydao.com"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-200 transition inline-block"
